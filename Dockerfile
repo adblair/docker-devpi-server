@@ -8,10 +8,8 @@ RUN python3 /get-pip.py
 
 RUN pip install devpi-server==2.2.1 devpi-web==2.3.0
 
-ENV PORT=3141 SERVERDIR=/srv/devpi-server
+EXPOSE 3141
 
-EXPOSE $PORT
+VOLUME /srv/devpi-server
 
-VOLUME $SERVERDIR
-
-CMD devpi-server --host 0.0.0.0 --port $PORT --serverdir $SERVERDIR
+CMD ["devpi-server", "--host", "0.0.0.0", "--port", "3141", "--serverdir", "/srv/devpi-server"]
