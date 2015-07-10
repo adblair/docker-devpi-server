@@ -3,7 +3,7 @@
 
 Create a data-only container:
 
-    docker create --name=devpi-server-data --volume=/srv/devpi-server adblair/devpi-server true
+    docker create --name=devpi-server-data adblair/devpi-server true
 
 Start the server:
 
