@@ -6,7 +6,7 @@ ADD https://bootstrap.pypa.io/get-pip.py /get-pip.py
 
 RUN python3 /get-pip.py
 
-RUN pip install devpi-server==2.3.0 devpi-web==2.4.1
+RUN pip install devpi-server==2.3.1 devpi-web==2.4.1
 
 EXPOSE 3141
 
