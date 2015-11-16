@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ioft/armhf-ubuntu:14.04
 
 MAINTAINER Arthur Blair <adblair@gmail.com>
 
