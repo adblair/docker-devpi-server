@@ -1,12 +1,8 @@
-FROM ubuntu:14.04
+FROM python:3.5-alpine
 
 MAINTAINER Arthur Blair <adblair@gmail.com>
 
-ADD https://bootstrap.pypa.io/get-pip.py /get-pip.py
-
-RUN python3 /get-pip.py
-
-RUN pip install devpi-server==2.3.1 devpi-web==2.4.1
+RUN ["pip", "install", "--no-cache-dir", "devpi-server==3.0.1"]
 
 EXPOSE 3141
 
